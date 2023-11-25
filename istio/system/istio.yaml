@@ -90,7 +90,7 @@ spec:
       enabled: false
     resources:
       requests:
-        cpu: 10m
+        cpu: 50m
         memory: 128Mi
     service:
       type: "${service:=LoadBalancer}"
