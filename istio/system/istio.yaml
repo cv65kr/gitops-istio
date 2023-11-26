@@ -60,6 +60,7 @@ spec:
             memory: 16Mi
     pilot:
       autoscaleEnabled: false
+      hostNetwork: true
       resources:
         requests:
           cpu: 100m
