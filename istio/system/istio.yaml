@@ -80,6 +80,7 @@ spec:
   chart:
     spec:
       version: "${version}"
+      timeout: 6m30s
       chart: gateway
       sourceRef:
         kind: HelmRepository
