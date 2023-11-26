@@ -74,7 +74,7 @@ metadata:
     app.kubernetes.io/part-of: istio
 spec:
   releaseName: istio-gateway
-  timeout: 6m30s
+  timeout: 10m30s
   dependsOn:
     - name: istio-base
     - name: istiod
@@ -91,7 +91,7 @@ spec:
       enabled: false
     resources:
       requests:
-        cpu: 50m
-        memory: 128Mi
+        cpu: 100m
+        memory: 256Mi
     service:
       type: "${service:=LoadBalancer}"
