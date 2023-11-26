@@ -74,13 +74,13 @@ metadata:
     app.kubernetes.io/part-of: istio
 spec:
   releaseName: istio-gateway
+  timeout: 6m30s
   dependsOn:
     - name: istio-base
     - name: istiod
   chart:
     spec:
       version: "${version}"
-      timeout: 6m30s
       chart: gateway
       sourceRef:
         kind: HelmRepository
